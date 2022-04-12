@@ -16,10 +16,10 @@ Route::get('/dashboard', function () {
     Route::get('booking', [FrontendController::class, 'booking'])->name('booking');
     Route::get('car/service', [FrontendController::class, 'car_service'])->name('car.service');
     Route::get('carrent', [FrontendController::class, 'carrent'])->name('carrent');
+    Route::post('contact/message', [FrontendController::class, 'contactmessage'])->name('contact.message');
 
 
     Route::get('contactus', [FrontendController::class, 'contactus'])->name('contactus');
-    Route::post('contact/message', [FrontendController::class, 'contactmessage'])->name('contact.message');
 
 
 
