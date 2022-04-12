@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title> @yield('title') - Business Website</title>
+        <title> @yield('title') - Saad Rent A Car</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta content="" />
         <meta content="Coderthemes" name="author" />
@@ -42,7 +42,7 @@
                 <div class="topbar-left">
                     <a href="{{ route('admin.index') }}" class="logo">
                         <span>
-                            <h4 class="text-white pt-2"><strong>Business Website Admin</strong></h4>
+                            <h4 class="text-white pt-2"><strong>Saad Rent A Car Admin</strong></h4>
                         </span>
                         <i>
                             <img src="{{ asset('Backend') }}/assets/images/logo_sm.png" alt="" height="28">
@@ -112,11 +112,17 @@
                     <div id="sidebar-menu">
                         <!-- Left Menu Start -->
                         <ul class="metismenu" id="side-menu">
-                            <li class="menu-title">Tolet Book</li>
+                            <li class="menu-title">Saad rent a car</li>
                             <li>
                                 <a href="{{ route('admin.index') }}">
                                     <i class="fi-air-play"></i>  <span> Dashboard </span>
                                 </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);"><i class="far fa-question-circle"></i> <span> Booking Request </span> <span class="menu-arrow"></span></a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="{{ route('querstion.index') }}">View All</a></li>
+                                </ul>
                             </li>
                             {{-- <li>
                                 <a href="javascript: void(0);"><i class="fas fa-sitemap"></i> <span>Product Category</span> <span class="menu-arrow"></span></a>
@@ -133,13 +139,13 @@
                                     <li><a class="text-danger" href="{{ route('properties.pending') }}">Pending Properties</a></li>
                                 </ul>
                             </li> --}}
-                            <li>
+                            {{-- <li>
                                 <a href="javascript: void(0);"> <i class="fa-brands fa-product-hunt"></i> <span>Our Product</span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
                                     <li><a href="{{ route('service.index') }}">View All Products</a></li>
                                     <li><a href="{{ route('service.create') }}">Add New Products</a></li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             {{-- <li>
                                 <a href="javascript: void(0);"> <i class="fa-solid fa-house-medical"></i> <span>New Arrivals</span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
@@ -159,12 +165,7 @@
                                     <li><a href="{{ route('request.index') }}">Rental Consultancy</a></li>
                                 </ul>
                             </li> --}}
-                            <li>
-                                <a href="javascript: void(0);"><i class="far fa-question-circle"></i> <span> Visitor queries </span> <span class="menu-arrow"></span></a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                    <li><a href="{{ route('querstion.index') }}">View All</a></li>
-                                </ul>
-                            </li>
+                            
                             <li>
                                 <a href="javascript: void(0);"><i class="fas fa-chevron-circle-left"></i> <span> Back Website</span> <span class="menu-arrow"></span></a>
                                 <ul class="nav-second-level" aria-expanded="false">
@@ -206,7 +207,7 @@
                 </div> <!-- content -->
 
                 <footer class="footer text-right">
-                    @php echo date('Y'); @endphp © Business Website 
+                    @php echo date('Y'); @endphp © Saad Rent A Car
                 </footer>
 
             </div>
