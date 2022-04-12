@@ -11,8 +11,10 @@ class ContactFormSubmit extends Model
 
     protected $fillable = [
         'name',
-        'email',
         'phone',
+        'car_name',
+        'pick_time',
+        'drop_time',
         'message',
     ];
 }

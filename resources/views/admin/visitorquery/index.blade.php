@@ -29,7 +29,9 @@
                                     <th>SI NO.</th>
                                     <th>Name </th>
                                     <th>Phone</th>
-                                    <th>Email</th>
+                                    <th>Car Name</th>
+                                    <th>Car Pick Time</th>
+                                    <th>Car Drop Time</th>
                                     <th>Message</th>
                                     <th>Sending Time</th>
                                     <th>Action</th>
@@ -51,7 +53,15 @@
                                         </td>
 
                                         <td>
-                                            <p>{{ $query->email }}</p>
+                                            <p>{{ $query->car_name }}</p>
+                                        </td>
+
+                                        <td>
+                                            <p>{{ $query->pick_time }}</p>
+                                        </td>
+
+                                        <td>
+                                            <p>{{ $query->drop_time }}</p>
                                         </td>
 
                                         <td>

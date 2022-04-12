@@ -46,25 +46,19 @@ class FrontendController extends Controller
         return view('carrent');
     }
 
-    
-
-
-    public function contactus()
-    {
-        return view('contactus');
-    }
-
     public function contactmessage(Request $request)
     {
         $request->validate([
             'name' => 'required|min:2',
-            'email' => 'required|min:2',
             'phone' => 'required',
+            'car_name' => 'required',
+            'pick_time' => 'required',
+            'drop_time' => 'required',
             'message' => 'required',
         ]);
 
         ContactFormSubmit::create($request->all());
-        Notify::success('Message Successfully Submited', 'Success');
+        Notify::success('Your Booking Request Submited', 'Success');
         return back();
     }
 

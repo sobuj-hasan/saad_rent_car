@@ -43,7 +43,7 @@
                 @error('drop_time')
                     <span class="text-danger">{{ $message }}</span>
                 @enderror
-                <textarea name="description" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
                 <Button type="submit">Send</Button>
               </form>
             </div>

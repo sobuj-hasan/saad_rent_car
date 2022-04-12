@@ -849,16 +849,16 @@ padding: 50px 0px;
 }
 
 
-.booking-box input{
-   width: 100%;
+.booking-box input {
+    width: 100%;
     padding: 10px;
     font-size: 20px;
     box-shadow: 3px 3px 3px 3px black;
     margin: 20px 0px;
     text-transform: uppercase;
-    background-color: black;
-    color: white;
-    }
+    background-color: #faf2f2;
+    color: #0e0101;
+}
     
     .booking-box label{
         font-size: 30px;
